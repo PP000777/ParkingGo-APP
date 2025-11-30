@@ -1,20 +1,11 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+// Arquivo: App.js (na raiz do projeto)
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
+import React from 'react';
+import AppRouter from './src/navigation/AppRoutes'; // Ajuste o caminho conforme sua estrutura
+
+function App() {
+  // Renderiza o componente que contém toda a lógica de navegação.
+  return <AppRouter />;
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+export default App;
